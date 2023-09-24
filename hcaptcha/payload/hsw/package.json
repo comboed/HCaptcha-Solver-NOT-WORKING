@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "jsdom": "^22.1.0"
+  },
+  "devDependencies": {
+    "canvas": "^2.11.2",
+    "jest-canvas-mock": "^2.5.2"
+  },
+  "jest": {
+    "setupFiles": [
+      "jest-canvas-mock"
+    ]
+  }
+}

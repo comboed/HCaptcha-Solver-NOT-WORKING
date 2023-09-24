@@ -1,0 +1,1 @@
+from hcaptcha.captcha import HCaptcha
