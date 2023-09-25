@@ -442,3 +442,6 @@ is the calf a calf?:yes
 is it true that a bull is sugary?:no
 is a buffalo a vertebrate?:yes
 can a bull drink liquids?:yes
+does carp have a distinctive fishy smell?:yes
+is a buffalo a salad?:no
+does baboons have a dog?:no
