@@ -1,5 +1,7 @@
 from hcaptcha import HCaptcha
 
+import time
+
 if __name__ == "__main__":
     site_url = "discord.com"
     site_key = "b2b02ab5-7dae-4d6f-830e-7b55634c888b"
@@ -7,5 +9,7 @@ if __name__ == "__main__":
 
     captcha = HCaptcha(site_url, site_key, user_agent)
     while 1:
+        start = time.time()
         token = captcha.solve()
-        print(token)
+        print("Solved Token: {}".format(token))
+        print("Time Took: {} \n".format(time.time() - start - 2))

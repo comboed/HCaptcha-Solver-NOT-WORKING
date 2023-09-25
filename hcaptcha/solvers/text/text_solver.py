@@ -75,9 +75,10 @@ class TextSolver:
     
     def submit_text_answers(self, config, key, job_mode, questions, answers):
         response = self.check_answers(config, key, job_mode, answers)
-        if (type(response) == str):
+        response_type = type(response)
+        if (response_type == str and response[:2] == "P1"):
             self.write_answers(questions)
             self.previous_answers = self.load_previous_answers()
-        else:
+        elif (response_type == dict):
             self.remove_answers(questions)
         return response

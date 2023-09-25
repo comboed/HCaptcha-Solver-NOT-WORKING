@@ -53,7 +53,7 @@ class HCaptcha(TLSClient, Payload, TextSolver):
         if ("generated_pass_UUID" in text):
             return json["generated_pass_UUID"]
         elif ("tasklist" not in text):
-            print("[-] Unable to get refresh tasklist")
+            print("[-] Unable to refresh tasklist")
             return None
         return json
     
