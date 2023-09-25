@@ -50,7 +50,6 @@ class TextSolver:
                 "action": "wpaicg_chat_shortcode_message",
                 "message": question + " Accurately answer yes or no with no period or explanation in lowercase. Use sources if needed."
             })
-            print("YAY!")
             if ("success" in response.text):
                 answer = response.json()["data"]
                 tasks[task_key] = {"text": answer}
